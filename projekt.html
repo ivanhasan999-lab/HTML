@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt – Alan Turing Portfolio</title>
+  <meta name="description" content="Utforska Alan Turings historiska projekt som Turingmaskinen och Enigma-avkodaren.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__nav" aria-label="Huvudmeny">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Om mig</a></li>
+        <li class="nav__item"><a class="nav__link" href="kompetenser.html">Kompetenser</a></li>
+        <li class="nav__item"><a class="nav__link" href="projekt.html" aria-current="page">Projekt</a></li>
+        <li class="nav__item"><a class="nav__link" href="utbildning.html">Utbildning</a></li>
+        <li class="nav__item"><a class="nav__link" href="ai.html">AI &amp; Etik</a></li>
+        <li class="nav__item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <h1 class="page__title">Mina projekt</h1>
+
+    <!-- Projekt 1 -->
+    <article class="project-box project-box--featured">
+      <h2 class="project-box__title">Turingmaskinen</h2>
+      <p class="project-box__text">En matematisk modell av en universell beräkningsmaskin som lade grunden till all mjukvaruutveckling.</p>
+      
+      <!-- JS: Förklarar hur maskinen fungerar baserat på data-concept -->
+      <button type="button" class="project-box__action" 
+              data-js-action="explain-model" 
+              data-concept="turing-machine">
+        Visa hur den fungerar
+      </button>
+      <p class="project-box__output" data-js-target="machine-explanation" aria-live="polite"></p>
+    </article>
+
+    <!-- Projekt 2 -->
+    <article class="project-box">
+      <h2 class="project-box__title">The Bombe (Enigma-avkodaren)</h2>
+      <p class="project-box__text">En elektromekanisk maskin som användes för att läsa krypterade meddelanden under andra världskriget.</p>
+      
+      <!-- JS: Visar avkodningsstatistik när man klickar på knappen -->
+      <button type="button" class="project-box__action" 
+              data-js-action="show-stats" 
+              data-machine="bombe">
+        Visa avkodningsstatistik
+      </button>
+      <p class="project-box__output" data-js-target="stats-output" aria-live="polite"></p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Alan Turing Portfolio</p>
+  </footer>
+</body>
+</html>

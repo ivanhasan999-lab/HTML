@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Alan Turing Portfolio</title>
+    <meta name="description" content="Kontakta oss för frågor om Alan Turing och hans historiska projekt inom datavetenskap.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__nav" aria-label="Huvudmeny">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Om mig</a></li>
+                <li class="nav__item"><a class="nav__link" href="kompetenser.html">Kompetenser</a></li>
+                <li class="nav__item"><a class="nav__link" href="projekt.html">Projekt</a></li>
+                <li class="nav__item"><a class="nav__link" href="utbildning.html">Utbildning</a></li>
+                <li class="nav__item"><a class="nav__link" href="ai.html">AI &amp; Etik</a></li>
+                <li class="nav__item"><a class="nav__link" href="kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page__main">
+        <h1 class="page__title">Kontakta oss</h1>
+        <p class="page__text">Har du frågor om Alan Turing eller projektet? Skicka ett meddelande nedan.</p>
+
+        <form class="contact-form" action="tack.php" method="post">
+            <div class="contact-form__group">
+                <label for="name" class="contact-form__label">Namn:</label>
+                <input type="text" id="name" name="name" class="contact-form__input" autocomplete="name" required>
+            </div>
+
+            <div class="contact-form__group">
+                <label for="email" class="contact-form__label">E-post:</label>
+                <input type="email" id="email" name="email" class="contact-form__input" autocomplete="email" required>
+            </div>
+
+            <fieldset class="contact-form__fieldset">
+                <legend class="contact-form__legend">Vad gäller ditt ärende?</legend>
+                <div class="contact-form__radio-group">
+                    <input type="radio" id="choice-question" name="choice" value="question" class="contact-form__radio" checked>
+                    <label for="choice-question" class="contact-form__radio-label">Allmän fråga</label>
+                </div>
+                <div class="contact-form__radio-group">
+                    <input type="radio" id="choice-projekt" name="choice" value="projekt" class="contact-form__radio">
+                    <label for="choice-projekt" class="contact-form__radio-label">Projekt</label>
+                </div>
+            </fieldset>
+
+            <div class="contact-form__group">
+                <label for="message" class="contact-form__label">Meddelande:</label>
+                <textarea id="message" name="message" class="contact-form__textarea" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-form__submit">Skicka</button>
+        </form>
+
+        <section class="contact-links">
+            <h2>Fler kontaktvägar</h2>
+            <p>Du kan även nå oss via:</p>
+            <ul class="contact-links__list">
+                <li><a href="mailto:info@alanturing.se" class="contact-links__link">E-post</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-links__link">LinkedIn</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener" class="contact-links__link">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Alan Turing Portfolio</p>
+    </footer>
+</body>
+</html>

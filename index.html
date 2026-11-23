@@ -1,0 +1,54 @@
+<<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om mig – Alan Turing Portfolio</title>
+  <meta name="description" content="Lär känna Alan Turing, matematiker och pionjär inom datavetenskap och artificiell intelligens.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__nav" aria-label="Huvudmeny">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html" aria-current="page">Om mig</a></li>
+        <li class="nav__item"><a class="nav__link" href="kompetenser.html">Kompetenser</a></li>
+        <li class="nav__item"><a class="nav__link" href="projekt.html">Projekt</a></li>
+        <li class="nav__item"><a class="nav__link" href="utbildning.html">Utbildning</a></li>
+        <li class="nav__item"><a class="nav__link" href="ai.html">AI &amp; Etik</a></li>
+        <li class="nav__item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <h1 class="page__title">Om mig</h1>
+    
+    <section class="bio-card bio-card--featured">
+      <h2 class="bio-card__title">Alan Turing</h2>
+      
+      <figure class="bio-card__figure">
+        <img class="bio-card__image" src="images/alan-turing.webp" alt="Porträtt av den brittiske matematikern Alan Turing" width="300" height="300">
+        <figcaption class="bio-card__caption">Brittisk matematiker och kryptoanalytiker.</figcaption>
+      </figure>
+
+      <p class="bio-card__text">
+        Jag var en brittisk matematiker, logiker och kryptograf. Under andra världskriget ledde jag arbetet på Bletchley Park för att knäcka fiendens chiffer, och mina teoretiska modeller lade grunden till alla moderna datorer och artificiell intelligens.
+      </p>
+
+      <!-- JS: När användaren klickar på knappen visas ett citat i target-elementet -->
+      <button type="button" class="bio-card__button" 
+              data-js-action="show-quote" 
+              data-author="turing">
+        Visa berömt citat
+      </button>
+      <p class="bio-card__output" data-js-target="quote-box" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Alan Turing Portfolio (Fiktiv gruppinlämning)</p>
+  </footer>
+</body>
+</html><!DOCTYPE html>
